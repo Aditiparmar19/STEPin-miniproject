@@ -38,12 +38,12 @@ float loanamt,interest,monthlypayment;
    i=loanamt * ((interest/100)/12);
    //amount including interest
    i=i+loanamt;
-   first_month=i-monthlypayment; //first month payment with interest
+   first_month=i-monthlypayment; //first month payment including interest
    i=first_month * ((interest/100)/12);
-   i=i+firstmon;
+   i=i+first_month;
    second_month=i-monthlypayment; //second month payment with interest
-   printf("remaining amount need to pay after 1st installment:%.2f\n",firstmon);
-   printf("remaining amount need to pay after 2nd installment:%.2f\n",secondmon);
+   printf("remaining amount to be paid:%.2f\n",first_month);
+   printf("remaining amount to be paid:%.2f\n",second_month);
    return 0;
 }
 
